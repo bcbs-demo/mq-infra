@@ -105,5 +105,6 @@ If you want to enable the queuemanager to use security, we need to set the `secu
 If you want to enable the queuemanager to use native high avaibility capability, we need to set the `ha` flag to `true` in `Values.yaml`. By default, it is always `false`.
 
 
+
 - A Native HA configuration provides a highly available queue manager where the recoverable MQ data (for example, the messages)  are replicated across multiple sets of storage, preventing loss from storage failures.
 - This is suitable for use with cloud block storage.

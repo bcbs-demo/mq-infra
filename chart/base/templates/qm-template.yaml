@@ -19,9 +19,9 @@ spec:
     {{ if eq .Values.ha true }}
     availability:
       type: {{ .Values.availability.hatype }}
-      tls:
-        secretName: {{ .Values.cert.secretName }}
-        cipherSpec: ANY_TLS12_OR_HIGHER
+      # tls:
+      #   secretName: {{ .Values.cert.secretName }}
+      #   cipherSpec: ANY_TLS12_OR_HIGHER
     {{ else }}
     availability:
       type: {{ .Values.availability.type }}
@@ -35,6 +35,7 @@ spec:
         - {{ .Values.mqsc.name }}
     {{ if eq .Values.ha true }}
     storage:
+      defaultClass: {{ .Values.storage.defaultClass }}
       queueManager:
         size: {{ .Values.storage.queueManager.size }}
         type: {{ .Values.storage.queueManager.hatype }}
@@ -49,6 +50,8 @@ spec:
     {{ end }}
   securityContext:
     initVolumeAsRoot: {{ .Values.securityContext.initVolumeAsRoot }}
+    supplementalGroups:
+      - 99
   template:
     pod:
       containers:

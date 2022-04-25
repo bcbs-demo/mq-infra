@@ -50,6 +50,7 @@ queuemanager:
       memory: 1Gi
 
 storage:
+  defaultClass: managed-nfs-storage
   persistedData:
     enabled: false
   queueManager:

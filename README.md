@@ -103,6 +103,7 @@ If you want to enable the queuemanager to use security, we need to set the `secu
 ## Enable Native HA
 
 
+
 If you want to enable the queuemanager to use native high avaibility capability, we need to set the `ha` flag to `true` in `Values.yaml`. By default, it is always `false`.
 
 

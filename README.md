@@ -100,13 +100,10 @@ If you want to enable the queuemanager to use security, we need to set the `secu
 - Enable TLS protocol security. We can specify the cryptographic algorithms that are used by the TLS protocol by supplying a CipherSpec as part of the channel definition along with the authenticated user information.
 - This privileged user will be allowed to access the queue manager and interact with it.
 
+
 ## Enable Native HA
 
-
-
 If you want to enable the queuemanager to use native high avaibility capability, we need to set the `ha` flag to `true` in `Values.yaml`. By default, it is always `false`.
-
-
 
 - A Native HA configuration provides a highly available queue manager where the recoverable MQ data (for example, the messages)  are replicated across multiple sets of storage, preventing loss from storage failures.
 - This is suitable for use with cloud block storage.

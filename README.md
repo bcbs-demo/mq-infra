@@ -6,7 +6,7 @@ This project contains necessary artifacts for deploying queuemanager on Openshif
 
 * [Introduction](#introduction)
 * [Pre-requisites](#pre-requisites)
-* [Queuemanager Details](#queuemanager-details)
+* [Queue manager Details](#queuemanager-details)
 
 ## Introduction
 

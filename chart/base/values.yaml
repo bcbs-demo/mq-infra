@@ -47,7 +47,7 @@ queuemanager:
       memory: 2Gi
     requests:
       cpu: "1"
-      memory: 1Gi
+      memory: 2Gi
 
 storage:
   defaultClass: managed-nfs-storage

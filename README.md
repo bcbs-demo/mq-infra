@@ -8,7 +8,7 @@ This project contains necessary artifacts for deploying queuemanager on Openshif
 * [Pre-requisites](#pre-requisites)
 * [Queue manager Details](#queuemanager-details)
 
-## Introduction
+## Introductions
 
 This guide provides a walkthrough on how to set up an Queuemanager.  The Github repository is a template containing a Dockerfile and Helm Chart which is used with the [Cloud Native Toolkit](https://cloudnativetoolkit.dev/) to register a Tekton pipeline to build a Queuemanager image and deploy it on a containerized instance of IBM MQ.
 
